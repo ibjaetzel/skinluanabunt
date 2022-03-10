@@ -49,12 +49,15 @@ body{
 	margin-bottom: -2px; }
 	
 .ipsTabPane>.navigation>.scroll>.buttons>div.active {
-  height: 33px;
-  border-bottom: solid 2px #3aa9ff!important; /* important to circumvent first element has no border css */
+  height: 34px;
+  border-bottom: solid 1px #3aa9ff!important; /* important to circumvent first element has no border css */
   margin-bottom: -5px;
   font-weight: 400; }
 	
-div.ipsLogin,
+div.ipsLogin {
+	color: black;
+    background: #ffffff; }
+
 div.ipsWebFront {
 	color: black;
 	background: #f9f9f9; /* Old browsers */
@@ -83,6 +86,11 @@ div.ipsWebFront {
 	
 .ipsCategory>.container .content .link{
 	padding-right: 10px; }
+
+.ipsIconIPS {
+	background-image: url(img/IBJ_Signet.svg)!important;
+	filter: invert(0)!important;
+}
 
 /*
 *	Ident all objects with children uner the main cathegory
@@ -496,14 +504,16 @@ div.ipsPanel.ipsDWDReport .title {
  */	
 
 .ipsLogin .logoTop {
-	/* background-image: url(../img/logo.svg);  FIXME: blue Logo */
-	filter: invert(100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100px;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 400px; }
+	background-image: url(img/IBJ_ESZ_LUANA_SG.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: fixed;
+	height: 254px;
+	width: 626px;
+	top: 50%;
+	left: 50%;
+	margin-left: -330px;
+	margin-top: -300px;}
 
 .ipsLogin>.content {
 	margin: 0;
@@ -519,8 +529,8 @@ div.ipsPanel.ipsDWDReport .title {
 
 .ipsLogin>.content>.configurators>div {
 	background-color: white;
-    border: none;
-    box-shadow: 5px 7px 5px -5px rgb(182, 182, 182);
+    border: 1px solid;
+    border-color: lightgray;
     margin: 0px 5%;
     width: 200px;
     padding: 10px;
